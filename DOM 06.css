@@ -1,0 +1,88 @@
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 350px;
+    margin: 50px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    background-color: #f9f9ff;
+}
+
+form {
+    padding: 36px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.form-control {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    margin-bottom: 4px;
+    display: block;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-control input:focus {
+    border-color: #777;
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    visibility: hidden;
+}
+
+form>input {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control i {
+    color: #777;
+    position: absolute;
+    right: 15px;
+    top: 32px;
+    cursor: pointer;
+}
